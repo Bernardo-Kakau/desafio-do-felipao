@@ -1,29 +1,26 @@
-let heroi = "luffy"
-let Xp = 1000
+// Definir variáveis para armazenar o nome e a experiência do herói
+let nomeHeroi = "luffy"
+let experiencia = "100000"
+let nivel = "";
 
-switch (Xp) {
-    case 0 < 1000:
-        console.log("O heroi de nome  esta no nivel ferro")
-        break
-    case 1001 > 2000:
-        console.log("Bronze") 
-        break
-    case 2001 > 5000:
-        console.log("prata")
-        break
-    case 5001 > 7000:
-        console.log("Ouro")
-        break
-    case 7001 > 8000:
-        console.log("Platina")
-        break
-    case 8001 > 9000:
-        console.log("ascendente")
-        break
-    case 9001 > 10000:
-        console.log("imortal")
-        break
-    case 10000 > 10001:
-        console.log("radiante")
-        break
+// Estrutura de decisão para determinar o nível do herói com base na XP
+if (experiencia < 1000) {
+    nivel = "Ferro";
+} else if (experiencia >= 1001 && experiencia <= 2000) {
+    nivel = "Bronze";
+} else if (experiencia >= 2001 && experiencia <= 5000) {
+    nivel = "Prata";
+} else if (experiencia >= 5001 && experiencia <= 7000) {
+    nivel = "Ouro";
+} else if (experiencia >= 7001 && experiencia <= 8000) {
+    nivel = "Platina";
+} else if (experiencia >= 8001 && experiencia <= 9000) {
+    nivel = "Ascendente";
+} else if (experiencia >= 9001 && experiencia <= 10000) {
+    nivel = "Imortal";
+} else if (experiencia >= 10001) {
+    nivel = "Radiante";
 }
+
+// Exibir o resultado
+console.log(`O nome do Heroi é ${nomeHeroi} está no nível de ${nivel}`);
